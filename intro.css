@@ -1,0 +1,47 @@
+#wrapper {
+	width: 50%;
+	border: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-bottom-color: #006600;
+}
+
+p {
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	
+}
+
+.italic {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.normal {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.bold {
+	font-size:14px;
+	font-weight:bold;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top:10px;
+}
+
+h2  {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top:-5px;
+}
+
+ul {
+	list-style: square;
+}
