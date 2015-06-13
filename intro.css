@@ -1,16 +1,33 @@
+/* Important note: 
+
+We are essentially creating elements in html and as such we are styling elements.
+Elements are usual block shaped and their dimensions and location on the page need to be defined.
+
+For example: You need to say how large(wide) will be via width property and then the location of
+that element on the line - such as margin-left,margin-right and margin-top and margin-bottom. 
+*/
+
+/*
+Our main element will take up 50% of the width of the browser (thats how wide its going to be).
+It will be located in the centre (via auto margins)
+*/
 #wrapper {
-	width: 50%;
-	border: 2px;
+	width: 70%;
+	
 	margin-left: auto;
 	margin-right: auto;
+	/*
+	border: 1px;
 	border-style: solid;
 	border-bottom-color: #006600;
+	*/
+
 }
 
 p {
 	font-family: Verdana, sans-serif;
-	font-size: 14px;
-	
+	font-size: 14px;	
+
 }
 
 .italic {
@@ -22,6 +39,12 @@ p {
 	font-weight: normal;
 	font-style: normal;
 }
+p.intro {
+	border-style: solid;
+	border: none;
+    border-left: 2px solid black;
+	padding-left: 10px;
+}
 
 .bold {
 	font-size:14px;
@@ -32,16 +55,45 @@ h1 {
 	font-family: Arial;
 	font-size: 30px;
 	font-weight: bold;
-	margin-top:10px;
+	margin-top:0px;
+	padding: 0px;
+
 }
 
 h2  {
 	font-family: Arial;
 	font-size: 20px;
 	font-weight: bold;
-	margin-top:-5px;
+	//margin-top:-5px;
 }
 
 ul {
 	list-style: square;
+	list-style-position: inside;
+	margin: 0px;
+	padding-left:10px;
 }
+
+.example {
+	padding-left:2%;
+	margin: 0px;
+
+}
+/* Note the heirachy: class 'title' will be a class defined within a element thats styled with the class 'example'*/
+.example .title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.content {
+	padding-bottom:3px;
+	margin-left: 10px;	
+}
+
+#navbar li  {
+	list-style:none;
+	display: inline;
+    margin: 0;
+    padding: 0;
+}
+
